@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'concert-match',
+    podModulePrefix: 'concert-match/pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
