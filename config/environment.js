@@ -16,7 +16,7 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
       'connect-src': "'self' https://api.bandsintown.com",
       'style-src': "'self' https://api.bandsintown.com",
-      'script-src': "'self'",
+      'script-src': "'self' https://api.bandsintown.com",
       'font-src': "'self'",
     },
     APP: {

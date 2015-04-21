@@ -1,0 +1,23 @@
+/* MAIN */
+
+/* NAVBAR */
+
+/* UL LI */
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* FLOATS */
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
