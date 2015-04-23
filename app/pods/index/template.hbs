@@ -2,5 +2,14 @@
 
 
 {{#each concert in model.concerts}}
-  <h4>{{model.concerts.venue.city}}</h4>
+  <h4>{{concert.venue.city}}</h4>
+
+  {{#each artist in model.concerts.artists}}
+    <h2>{{artist.name}}</h2>
+  {{/each}}
+  <p>
+    <strong>Ticket Status:</strong> {{concert.ticket_status}}<br>
+    <strong>Ticket URL:</strong> <a href="{{concert.ticket_url}}">  Purchase Tickets</a><br>
+    <strong>Venue Details:</strong> {{concert.venue.name}} in {{concert.venue.city}}, {{concert.venue.region}}<br>
+  </p>
 {{/each}}

@@ -9,6 +9,7 @@ export default Ember.Route.extend({
         type: 'GET',
         url: 'https://api.bandsintown.com/events/search.json?location=Sacramento,CA&app_id=randallkanna',
         dataType: 'jsonp',
+        // url: `https://api.bandsintown.com/events/search.json?location=${userLocation}&app_id=randallkanna`
         success: function(response) {
           resolve(response)
           debugger
