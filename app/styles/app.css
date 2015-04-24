@@ -43,8 +43,8 @@ ul li {
   padding: 0;
   margin: 0px;
   height: 100%;
-  color: black;
-  /*background-color: black;*/
+  color: white;
+  background-color: black;
  }
 
 /* HEADER */
@@ -75,7 +75,7 @@ ul li {
 }
 
 .logo h2 {
-  font-size: 70px;
+  font-size: 6em;
   color: white;
   line-height: 22px;
 }
@@ -85,13 +85,16 @@ ul li {
   font-size: 40px;
 }
 
+.red-font {
+  color: red;
+}
 
 
 /* BACKGROUND  */
 .background-image {
   background-image: url("https://farm3.staticflickr.com/2526/4149497419_bcf64ea273_o.jpg");
   background-repeat: no-repeat;
-  min-height: 650px;
+  min-height: 750px;
   min-width: 100%;
   max-width: 100%;
   left: 0;
@@ -102,6 +105,11 @@ ul li {
   background-size: cover;
 }
 
+/* padding */
+
+.padding-right-submit {
+  padding-right: 3%;
+}
 
 /* HEADER */
 
@@ -111,6 +119,10 @@ h1 {
 
 
 /* GENERAL */
+
+.float-right {
+  float: right;
+}
 
 .pull-right {
   float: right;
@@ -187,11 +199,6 @@ hr {
 .border-grey {
   border: 1px dotted #1e1e1e;
   /* margin-left: 5%;*/
-}
-
-.black-ground {
-  background-color: black;
-  float: right;
 }
 
 .fontblack {
