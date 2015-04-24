@@ -13,6 +13,7 @@ export default Ember.Controller.extend({
           url: `https://api.bandsintown.com/events/search.json?location=${params}&app_id=randallkanna`,
           dataType: 'jsonp',
           success: function(response) {
+            debugger
             resolve(response)
           },
           error: reject

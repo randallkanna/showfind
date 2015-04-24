@@ -1,11 +1,15 @@
 {{#each userLocation as |concert|}}
   <h4>{{concert.venue.city}}</h4>
 
-  {{#each artist in userLocation.artists}}
-    <h2>{{artist.name}}</h2>
+  {{#each artist in concert.artists}}
+    <h4>Featuring: {{artist.name}}</h4>
   {{/each}}
   <p>
     <strong>Ticket Status:</strong> {{concert.ticket_status}}<br>
+    <strong>Date:</strong> {{concert.datetime}}<br>
+    {{#if concert.on_sale_datetime}}
+      <strong>Onsale:</strong> {{concert.on_sale_datetime}}<br>
+    {{/if}}
     <strong>Ticket URL:</strong> <a href="{{concert.ticket_url}}">  Purchase Tickets</a><br>
     <strong>Venue Details:</strong> {{concert.venue.name}} in {{concert.venue.city}}, {{concert.venue.region}}<br>
   </p>
