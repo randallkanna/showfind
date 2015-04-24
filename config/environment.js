@@ -13,7 +13,12 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
-
+    contentSecurityPolicy: {
+      'connect-src': "'self' https://api.bandsintown.com",
+      'style-src': "'self' https://api.bandsintown.com",
+      'script-src': "'self' https://api.bandsintown.com",
+      'font-src': "'self'",
+    },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
