@@ -1,10 +1,7 @@
-<h4>Index</h4>
-
-
-{{#each concert in model.concerts}}
+{{#each userLocation as |concert|}}
   <h4>{{concert.venue.city}}</h4>
 
-  {{#each artist in model.concerts.artists}}
+  {{#each artist in userLocation.artists}}
     <h2>{{artist.name}}</h2>
   {{/each}}
   <p>

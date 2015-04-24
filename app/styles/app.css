@@ -21,3 +21,473 @@ ul li {
 .float-right {
   float: right;
 }
+
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+  padding: 0;
+  margin: 0px;
+  height: 100%;
+  color: black;
+  /*background-color: black;*/
+ }
+
+/* HEADER */
+.header {
+  background-color: black;
+  top: 0;
+  left: 0;
+  height: 60px;
+  color: white;
+  position: fixed;
+  font-size: 13px;
+  height: 8%;
+  color: white;
+  width: 100%;
+}
+
+.header a, a:link, a:visited, a:hover {
+  font-color: white;
+  font-decoration: none;
+}
+
+/* LOGO */
+
+.logo {
+  bottom: 0;
+  position: fixed;
+  padding-left: 1.5%;
+}
+
+.logo h2 {
+  font-size: 70px;
+  color: white;
+  line-height: 22px;
+}
+
+.second-logo {
+  color: #E62E00;
+  font-size: 40px;
+}
+
+
+
+/* BACKGROUND  */
+.background-image {
+  background-image: url("https://farm3.staticflickr.com/2526/4149497419_bcf64ea273_o.jpg");
+  background-repeat: no-repeat;
+  min-height: 650px;
+  min-width: 100%;
+  max-width: 100%;
+  left: 0;
+  top: 0;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/* HEADER */
+
+h1 {
+  font-family: Arial;
+}
+
+
+/* GENERAL */
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.padding-lg {
+  padding: 5%;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.padding-top-sm {
+  padding-top: 0.5%;
+}
+
+hr {
+  border-top: 1px dotted white;
+  background-color: black;
+  height: 1px;
+  width: 300px;
+}
+
+.padding-left-md {
+  padding-left: 10%;
+}
+
+.margin-left-md {
+  margin-left: 10%;
+}
+
+/* BUTTON DESIGN */
+
+.myButton {
+  background-color: #a73f2d;
+  border:1px solid #241d13;
+  display: inline-block;
+  color:#ffffff;
+  font-family:arial;
+  font-size: 10px;
+  font-weight:bold;
+  padding: 5px 18px;
+  text-decoration: none;
+  text-shadow:0px -1px 0px #7a2a1d;
+}
+
+.myButton:hover {
+  background-color:#b34332;
+}
+
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+/* CONCERT DESIGN UL */
+
+.concert-design {
+  font-size: 15px;
+  color: white;
+}
+
+.concert-design ul li {
+  font-size: 8px;
+}
+
+/*  COLORS */
+
+.border-grey {
+  border: 1px dotted #1e1e1e;
+  /* margin-left: 5%;*/
+}
+
+.black-ground {
+  background-color: black;
+  float: right;
+}
+
+.fontblack {
+  color: black;
+}
+
+
+/* SIMPLE GRID CSS */
+
+
+/*
+  Simple Grid
+  Learn More - http://dallasbass.com/simple-grid-a-lightweight-responsive-css-grid/
+  Project Page - http://thisisdallas.github.com/Simple-Grid/
+  Author - Dallas Bass
+  Site - dallasbass.com
+*/
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+[class*='col-'] {
+  float: left;
+  padding-right: 20px; /* column-space */
+}
+
+.grid {
+  width: 100%;
+  max-width: 1140px;
+  min-width: 755px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-pad {
+  padding-top: 20px;
+  padding-left: 20px; /* grid-space to left */
+  padding-right: 0px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
+}
+
+.push-right {
+  float: right;
+}
+
+/* Content Columns */
+
+.col-1-1 {
+  width: 100%;
+}
+.col-2-3, .col-8-12 {
+  width: 66.66%;
+}
+
+.col-1-2, .col-6-12 {
+  width: 50%;
+}
+
+.col-1-3, .col-4-12 {
+  width: 33.33%;
+}
+
+.col-1-4, .col-3-12 {
+  width: 25%;
+}
+
+.col-1-5 {
+  width: 20%;
+}
+
+.col-1-6, .col-2-12 {
+  width: 16.667%;
+}
+
+.col-1-7 {
+  width: 14.28%;
+}
+
+.col-1-8 {
+  width: 12.5%;
+}
+
+.col-1-9 {
+  width: 11.1%;
+}
+
+.col-1-10 {
+  width: 10%;
+}
+
+.col-1-11 {
+  width: 9.09%;
+}
+
+.col-1-12 {
+  width: 8.33%
+}
+
+/* Layout Columns */
+
+.col-11-12 {
+  width: 91.66%
+}
+
+.col-10-12 {
+  width: 83.333%;
+}
+
+.col-9-12 {
+  width: 75%;
+}
+
+.col-5-12 {
+  width: 41.66%;
+}
+
+.col-7-12 {
+  width: 58.33%
+}
+
+
+
+/* Pushing blocks */
+
+.push-2-3, .push-8-12 {
+  margin-left: 66.66%;
+}
+
+.push-1-2, .push-6-12 {
+  margin-left: 50%;
+}
+
+.push-1-3, .push-4-12 {
+  margin-left: 33.33%;
+}
+
+.push-1-4, .push-3-12 {
+  margin-left: 25%;
+}
+
+.push-1-5 {
+  margin-left: 20%;
+}
+
+.push-1-6, .push-2-12 {
+  margin-left: 16.667%;
+}
+
+.push-1-7 {
+  margin-left: 14.28%;
+}
+
+.push-1-8 {
+  margin-left: 12.5%;
+}
+
+.push-1-9 {
+  margin-left: 11.1%;
+}
+
+.push-1-10 {
+  margin-left: 10%;
+}
+
+.push-1-11 {
+  margin-left: 9.09%;
+}
+
+.push-1-12 {
+  margin-left: 8.33%
+}
+
+
+@media handheld, only screen and (max-width: 767px) {
+  .grid {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px; /* grid-space to left */
+    padding-right: 10px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
+  }
+
+  [class*='col-'] {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 10px; /* column-space */
+  }
+
+
+  /* Mobile Layout */
+
+  [class*='mobile-col-'] {
+    float: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 10px; /* column-space */
+    padding-bottom: 0px;
+  }
+
+  .mobile-col-1-1 {
+    width: 100%;
+  }
+  .mobile-col-2-3, .mobile-col-8-12 {
+    width: 66.66%;
+  }
+
+  .mobile-col-1-2, .mobile-col-6-12 {
+    width: 50%;
+  }
+
+  .mobile-col-1-3, .mobile-col-4-12 {
+    width: 33.33%;
+  }
+
+  .mobile-col-1-4, .mobile-col-3-12 {
+    width: 25%;
+  }
+
+  .mobile-col-1-5 {
+    width: 20%;
+  }
+
+  .mobile-col-1-6, .mobile-col-2-12 {
+    width: 16.667%;
+  }
+
+  .mobile-col-1-7 {
+    width: 14.28%;
+  }
+
+  .mobile-col-1-8 {
+    width: 12.5%;
+  }
+
+  .mobile-col-1-9 {
+    width: 11.1%;
+  }
+
+  .mobile-col-1-10 {
+    width: 10%;
+  }
+
+  .mobile-col-1-11 {
+    width: 9.09%;
+  }
+
+  .mobile-col-1-12 {
+    width: 8.33%
+  }
+
+  /* Layout Columns */
+
+  .mobile-col-11-12 {
+    width: 91.66%
+  }
+
+  .mobile-col-10-12 {
+    width: 83.333%;
+  }
+
+  .mobile-col-9-12 {
+    width: 75%;
+  }
+
+  .mobile-col-5-12 {
+    width: 41.66%;
+  }
+
+  .mobile-col-7-12 {
+    width: 58.33%
+  }
+
+  .hide-on-mobile {
+    display: none !important;
+    width: 0;
+    height: 0;
+  }
+}
